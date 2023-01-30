@@ -10,7 +10,7 @@
             {
                 try
                 {
-                    Console.WriteLine("Hint 1 FibonacciSeries 2.Exit");
+                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -18,7 +18,11 @@
                             FibonacciSeries series = new FibonacciSeries();
                             series.CalculatedFibonacciSeries();
                             break;
-                        case 2:
+                            case 2:
+                            PerfectNumber perfectNumber = new PerfectNumber();
+                            perfectNumber.CheckNumberIsPerfect();
+                            break;
+                        case 3:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
