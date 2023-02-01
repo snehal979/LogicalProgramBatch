@@ -10,7 +10,7 @@
             {
                 try
                 {
-                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Exit");
+                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -23,6 +23,10 @@
                             perfectNumber.CheckNumberIsPerfect();
                             break;
                         case 3:
+                            PrimeNumber primeNumber = new PrimeNumber();
+                            primeNumber.CheckPrimeNumber(); 
+                            break;
+                        case 4:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
