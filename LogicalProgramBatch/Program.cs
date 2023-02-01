@@ -10,7 +10,8 @@
             {
                 try
                 {
-                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Revese Number 5.STOPWATCH 6.Day of Week 7.Exit");
+                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Revese Number 5.STOPWATCH 6.Day of Week " +
+                        "7.Temperature Conversion 8.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -40,6 +41,10 @@
                             dayOfWeek.WeekDayOfDay();
                             break;
                         case 7:
+                            TemperaturConversion temperaturConversion = new TemperaturConversion();
+                            temperaturConversion.ConvertTemperatureConversion();
+                            break;
+                        case 8:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
