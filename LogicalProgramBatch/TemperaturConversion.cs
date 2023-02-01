@@ -8,7 +8,7 @@ namespace LogicalProgramBatch
 {
     internal class TemperaturConversion
     {
-        public void ConvertTemperatureConversion()
+        public static void ConvertTemperatureConversion()
         {
             Console.WriteLine("Enter the tempeture");
             double temperature = Convert.ToInt32(Console.ReadLine());

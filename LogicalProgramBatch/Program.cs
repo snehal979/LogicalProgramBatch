@@ -11,7 +11,7 @@
                 try
                 {
                     Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Revese Number 5.STOPWATCH 6.Day of Week " +
-                        "7.Temperature Conversion 8.Exit");
+                        "7.Temperature Conversion 8.MonthlyPayment 9.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -37,14 +37,27 @@
                             stopWatch.OtherMethodElapsedIime();
                             break;
                         case 6:
-                            DayOfWeek dayOfWeek = new DayOfWeek();
-                            dayOfWeek.WeekDayOfDay();
+                            Console.WriteLine("TimeLap Calender");
+                            Console.WriteLine("Enter the Date of the Month");
+                            int day = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("For Month 1.Jan 2.Feb 3.Mar 4.April 5.May 6.Jun 7.July 8.Aug 9.Sept 10.Oct 11.Nov 12.Dec");
+                            int month = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Enter the year");
+                            int year = Convert.ToInt32(Console.ReadLine());
+                            DayOfWeek.WeekDayOfDay(day,month,year);  //Argument
                             break;
                         case 7:
-                            TemperaturConversion temperaturConversion = new TemperaturConversion();
-                            temperaturConversion.ConvertTemperatureConversion();
+                            TemperaturConversion.ConvertTemperatureConversion();
                             break;
                         case 8:
+                            Console.WriteLine("Enter the Principle,Year,Rate resp.");
+                            int P = Convert.ToInt32(Console.ReadLine());
+                            int Y= Convert.ToInt32(Console.ReadLine());
+                            int R = Convert.ToInt32(Console.ReadLine());
+
+                            MonthlyPayment.CalculateMonthlyPayment(P, Y, R);
+                            break;
+                        case 9:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;

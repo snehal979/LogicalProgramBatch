@@ -9,15 +9,8 @@ namespace LogicalProgramBatch
 {
     internal class DayOfWeek
     {
-        public void WeekDayOfDay()
+        public static void WeekDayOfDay(int day,int month,int year)
         {
-            Console.WriteLine("TimeLap Calender");
-            Console.WriteLine("Enter the Date of the Month");
-            int day = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("For Month 1.Jan 2.Feb 3.Mar 4.April 5.May 6.Jun 7.July 8.Aug 9.Sept 10.Oct 11.Nov 12.Dec");
-            int month = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the year");
-            int year = Convert.ToInt32(Console.ReadLine());
             //variable
             int y0, x, m0, d0;
             //Formula
