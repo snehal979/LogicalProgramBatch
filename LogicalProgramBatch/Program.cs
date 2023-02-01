@@ -10,7 +10,7 @@
             {
                 try
                 {
-                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Exit");
+                    Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Reverse Number 4.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -27,6 +27,10 @@
                             primeNumber.CheckPrimeNumber(); 
                             break;
                         case 4:
+                            ReverseNumber reverseNumber = new ReverseNumber();
+                            reverseNumber.CalculateReverseNumber();
+                            break;
+                        case 5: 
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
