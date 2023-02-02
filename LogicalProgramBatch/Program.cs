@@ -11,7 +11,7 @@
                 try
                 {
                     Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Revese Number 5.STOPWATCH 6.Day of Week " +
-                        "7.Temperature Conversion 8.MonthlyPayment 9.Exit");
+                        "7.Temperature Conversion 8.MonthlyPayment 9.Convert to Binary 10.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -58,6 +58,9 @@
                             MonthlyPayment.CalculateMonthlyPayment(P, Y, R);
                             break;
                         case 9:
+                            ToBinnary.ConvertBinary();
+                            break;
+                        case 10:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
