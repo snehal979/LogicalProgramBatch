@@ -32,7 +32,7 @@ namespace LogicalProgramBatch
             string result ="";
             while (number !=0 )  // 0 or 1 are binary code
             {
-                int remainder = number%2
+                int remainder = number%2;
                 result=remainder+result;
                 number =number/2;
             }

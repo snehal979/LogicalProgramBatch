@@ -11,7 +11,7 @@
                 try
                 {
                     Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Revese Number 5.STOPWATCH 6.Day of Week " +
-                        "7.Temperature Conversion 8.MonthlyPayment 9.Convert to Binary 10.Exit");
+                        "7.Temperature Conversion 8.MonthlyPayment 9.Convert to Binary 10.Vending Machine 11.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -59,8 +59,15 @@
                             break;
                         case 9:
                             ToBinnary.ConvertBinary();
+                            //ToBinnary.ConvertInterger();
                             break;
                         case 10:
+                            Console.WriteLine("Enter the ammount");
+                            int amount = Convert.ToInt32(Console.ReadLine());
+                            VendingMachine vendingMachine = new VendingMachine();
+                            vendingMachine.NoteVendingMachine(amount);
+                            break;
+                        case 11:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
