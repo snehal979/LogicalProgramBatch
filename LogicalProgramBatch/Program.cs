@@ -11,7 +11,7 @@
                 try
                 {
                     Console.WriteLine("Hint 1 FibonacciSeries 2.Perfect Number 3.Prime Number 4.Revese Number 5.STOPWATCH 6.Day of Week " +
-                        "7.Temperature Conversion 8.MonthlyPayment 9.Convert to Binary 10.Vending Machine 11.Cuopon Number 12.Exit");
+                        "7.Temperature Conversion 8.MonthlyPayment 9.Convert to Binary 10.Convert toInterger 11.Vending Machine 12.Cuopon Number 13.Exit");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
@@ -70,6 +70,10 @@
                             vendingMachine.NoteVendingMachine(amount);
                             break;
                         case 12:
+                            CuoponNumber cuoponNumber = new CuoponNumber();
+                            cuoponNumber.RandomCuoponNumber();
+                            break;
+                        case 13:
                             flag = false;
                             Console.WriteLine("Exit");
                             break;
