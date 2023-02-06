@@ -8,6 +8,9 @@ namespace LogicalProgramBatch
 {
     internal class ToBinnary
     {
+        /// <summary>
+        /// Convert Interger To Binary
+        /// </summary>
         public static void ConvertBinary()
         {
             //Conversion of Integer to BINARY
@@ -38,6 +41,29 @@ namespace LogicalProgramBatch
             }
             Console.WriteLine(result);
             Console.WriteLine("Total bits for the number convert to binary "+result.Length);
+        }
+        /// <summary>
+        /// Convert Binary to Interger
+        /// </summary>
+        public static void ConvertInterger()
+        {
+            Console.WriteLine("Enter the binary number");
+            string bainaryNumber = Console.ReadLine(); ;
+            // 1%2 =1  2^0 = 1
+            double divison = 0;
+            int i = bainaryNumber.Length-1;
+            while (i >=0)
+            {
+                 Console.WriteLine(bainaryNumber[bainaryNumber.Length-1-i]);
+                if (bainaryNumber[bainaryNumber.Length-1-i] =='1')
+                {
+                    double value = Math.Pow(2, i);
+                    Console.WriteLine(Math.Pow(2, i));
+                    divison += value;
+                }
+                i--;
+            }
+            Console.WriteLine("Number is : "+divison);
         }
     }
 }
